@@ -9,3 +9,14 @@ func Reverse(s string) string {
 	}
 	return string(r)
 }
+
+// Contains tells whether a contains x.
+func Contains(a []int, x int) bool {
+	// TODO: general type? not just int?
+	for _, n := range a {
+		if x == n {
+			return true
+		}
+	}
+	return false
+}
